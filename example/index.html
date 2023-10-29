@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Supanat T.">
+  <title>ฟอร์มค้นหาระบบการ</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="//code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body onload="setRegion()">
+  <div class="body-container">
+    <div class="container">
+
+      <form class="form-box" id="form">
+        <div class="title-box">
+          <div class="form-title">ฟอร์มเลือกระบบการ</div>
+        </div>
+    
+        <div class="form-item">
+          <label for="region">ภูมิภาค</label>
+          <select id="region" onchange="setZone(this.value)"></select>
+        </div>
+    
+        <div class="form-item">
+          <label for="zone">รวมภาค</label>
+          <select id="zone" onchange="setSector()" disabled>
+            <option value="" selected disabled>เลือกภูมิภาค :</option>
+          </select>
+        </div>
+    
+        <div class="form-item">
+          <label for="sector">ภาค</label>
+          <select id="sector" onchange="setDistrict()" disabled>
+            <option value="" selected disabled>เลือกภูมิภาค :</option>
+          </select>
+        </div>
+    
+        <div class="form-item">
+          <label for="district">เขต</label>
+          <select id="district" disabled>
+            <option value="" selected disabled>เลือกภูมิภาค :</option>
+          </select>
+        </div>
+    
+    
+        <button class="btn">
+          <i class="fa-regular fa-floppy-disk"></i> บันทึก
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ลิงก์ไปยังไฟล์ JavaScript -->
+  <script src="../sgt_area.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
