@@ -66,3 +66,10 @@ $("form").submit(e => {
     confirmButtonText: "ตกลง"
   });
 });
+
+const myObj = {};
+
+myObj.name = "test";
+Object.assign(myObj, { value: true });
+
+console.log(myObj);
