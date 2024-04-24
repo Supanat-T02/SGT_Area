@@ -1,5 +1,5 @@
-// Todo: SGT Area Version 1.0.1 //
-// Todo: Update 15 January 2024 //
+// Todo: SGT Area Version 1.0.2 //
+// Todo: Update 27 March 2024 //
 
 class SGT_Area {
   constructor() {
@@ -363,9 +363,9 @@ class SGT_Area {
               {
                 name: "หนองแขม",
                 district: [
-                  "บางแคเหนือ",
                   "หนองแขม",
-                  "หนองค้างพลู"
+                  "หนองค้างพลู",
+                  "หลักสอง"
                 ]
               }
             ]
