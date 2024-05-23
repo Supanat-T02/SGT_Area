@@ -1363,6 +1363,7 @@ class SGT_Area {
     ];
   }
 
+  // * เรียกรายชื่อระบบการ * //
   getRegion() {
     return this.areas.map((area, pos) => ({name: area.name, "pos": pos}));
   }
@@ -1407,4 +1408,6 @@ class SGT_Area {
   isValidPosition(pos, array) {
     return pos >= 0 && pos < array.length;
   }
+
+  
 }
