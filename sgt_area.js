@@ -1,5 +1,5 @@
-// Todo: SGT Area Version 1.0.0 //
-// Todo: Update 28 October 2023 //
+// Todo: SGT Area Version 1.0.2 //
+// Todo: Update 27 March 2024 //
 
 class SGT_Area {
   constructor() {
@@ -248,31 +248,20 @@ class SGT_Area {
             name: "กรุงเทพ 5",
             sector: [
               {
-                name: "บางกอกน้อย",
+                name: "ตลิ่งชัน",
                 district: [
                   "ฉิมพลี",
                   "ตลิ่งชัน",
-                  "ทวีวัฒนา",
+                  "ทวีวัฒนา"
+                ]
+              },
+              {
+                name: "บางกอกน้อย",
+                district: [
                   "บางกอกน้อย",
+                  "บางกอกใหญ่",
                   "บางขุนนนท์",
                   "บางพลัด"
-                ]
-              },
-              {
-                name: "บางแค",
-                district: [
-                  "บางแค",
-                  "บางแคเหนือ",
-                  "สุขสันต์",
-                  "หนองแขม",
-                  "หนองค้างพลู"
-                ]
-              },
-              {
-                name: "ภาษีเจริญ",
-                district: [
-                  "บางกอกใหญ่",
-                  "ภาษีเจริญ"
                 ]
               }
             ]
@@ -356,6 +345,27 @@ class SGT_Area {
                   "กาญจนาภิเษก",
                   "กำนันแม้น",
                   "บางบอน"
+                ]
+              }
+            ]
+          },
+          {
+            name: "กรุงเทพ 12",
+            sector: [
+              {
+                name: "ภาษีเจริญ",
+                district: [
+                  "บางแค",
+                  "ภาษีเจริญ",
+                  "สุขสันต์"
+                ]
+              },
+              {
+                name: "หนองแขม",
+                district: [
+                  "หนองแขม",
+                  "หนองค้างพลู",
+                  "หลักสอง"
                 ]
               }
             ]
@@ -1353,6 +1363,7 @@ class SGT_Area {
     ];
   }
 
+  // * เรียกรายชื่อระบบการ * //
   getRegion() {
     return this.areas.map((area, pos) => ({name: area.name, "pos": pos}));
   }
@@ -1397,4 +1408,6 @@ class SGT_Area {
   isValidPosition(pos, array) {
     return pos >= 0 && pos < array.length;
   }
+
+  
 }
