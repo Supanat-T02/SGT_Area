@@ -1,5 +1,5 @@
-// Todo: SGT Area Version 1.0.2 //
-// Todo: Update 27 March 2024 //
+// Todo: SGT Area Version 1.0.3 //
+// Todo: Update 22 April 2025 //
 
 class SGT_Area {
   constructor() {
@@ -884,6 +884,23 @@ class SGT_Area {
                 ]
               },
               {
+                name: "ศรีสะเกษ",
+                district: [
+                  "กันทรารมย์", 
+                  "ไพรบึง",
+                  "วังหิน",
+                  "ศรีมงคล",
+                  "ศรีสะเกษ",
+                  "ศิลาลาด",
+                  "อุทุมพร"
+                ]
+              }
+            ]
+          },
+          {
+            name: "อีสาน 7",
+            sector: [
+              {
                 name: "เมืองเดช",
                 district: [
                   "โคกสว่าง",
@@ -895,18 +912,6 @@ class SGT_Area {
                   "โนนแก้ง",
                   "บุณฑริก",
                   "เมืองเดช"
-                ]
-              },
-              {
-                name: "ราชธานี",
-                district: [
-                  "กันทรารมย์",
-                  "ไพรบึง",
-                  "วังหิน",
-                  "ศรีมงคล",
-                  "ศรีสะเกษ",
-                  "ศิลาลาด",
-                  "อุทุมพร"
                 ]
               },
               {
@@ -1408,6 +1413,4 @@ class SGT_Area {
   isValidPosition(pos, array) {
     return pos >= 0 && pos < array.length;
   }
-
-  
 }
