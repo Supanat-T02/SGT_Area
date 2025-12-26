@@ -1,9 +1,7 @@
-const area = new SGT_Area();
-
 function setRegion() {
   let html = "<option value='' selected disabled>เลือกภูมิภาค :</option>";
 
-  area.getRegion().forEach(e => {
+  SGT_Area.getRegion().forEach(e => {
     html += `<option value="${e.pos}">${e.name}</option>`;
   });
 
@@ -13,7 +11,7 @@ function setRegion() {
 function setZone(pos) {
   let html = "<option value='' selected disabled>เลือกรวมภาค :</option>";
   
-  area.getZone(pos).forEach(e => {
+  SGT_Area.getZone(pos).forEach(e => {
     html += `<option value="${e.pos}">${e.name}</option>`;
   });
 
@@ -27,7 +25,7 @@ function setSector() {
   const zone_pos = $("#zone").val();;
   let html = "<option value='' selected disabled>เลือกภาค :</option>";
 
-  area.getSector(rg_pos, zone_pos).forEach(e => {
+  SGT_Area.getSector(rg_pos, zone_pos).forEach(e => {
     html += `<option value="${e.pos}">${e.name}</option>`;
   });
 
@@ -41,7 +39,7 @@ function setDistrict() {
   const sec_pos = $("#sector").val();
   let html = "<option value='' selected disabled>เลือกเขต :</option>";
 
-  area.getDistrict(rg_pos, zone_pos, sec_pos).forEach(e => {
+  SGT_Area.getDistrict(rg_pos, zone_pos, sec_pos).forEach(e => {
     html += `<option value="${e.pos}">${e.name}</option>`;
   });
 
@@ -66,10 +64,3 @@ $("form").submit(e => {
     confirmButtonText: "ตกลง"
   });
 });
-
-const myObj = {};
-
-myObj.name = "test";
-Object.assign(myObj, { value: true });
-
-console.log(myObj);
